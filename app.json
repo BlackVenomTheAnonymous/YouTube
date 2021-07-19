@@ -1,0 +1,28 @@
+{
+  "name": "YouTube Downloader Bot",
+  "description": "A telegram bot To Download Youtube Files ",
+  "keywords": [
+    "Youtube","YoutubeDownloader"
+  ],
+  "repository": "https://t.me/PolygonStreetBet",
+  "success_url": "https://t.me/PolygonStreetBet",
+  "website": "https://t.me/PolygonStreetBet",
+  "env": {
+        "API_ID": {"description": "Get this value from https://my.telegram.org", "required": true},
+        "API_HASH": {"description": "Get this value from https://my.telegram.org" , "required": true},
+        "BOT_TOKEN": {"description": "Get Bot Token From BotFather Bot","required": true}
+  },
+      "buildpacks": [
+        {"url": "https://t.me/PolygonStreetBet"},
+        {"url": "heroku/python"}
+    ],
+  "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+      "stack": "heroku-20"
+
+
+}
